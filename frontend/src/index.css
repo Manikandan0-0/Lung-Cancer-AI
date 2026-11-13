@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #253237;
+  --color-navy-dark: #1b2529;
+  --color-navy-light: #070a7d;
+  --color-ocean: #5C6B73;
+  --color-ocean-dark: #475359;
+  --color-ocean-light: #9DB4C0;
+  --color-cyan: #9DB4C0;
+  --color-cyan-hover: #C2DFE3;
+  --color-cyan-light: #C2DFE3;
+  --color-pale: #E0FBFC;
+  --color-pale-card: rgba(224, 251, 252, 0.08);
+  --color-pale-border: rgba(194, 223, 227, 0.25);
+}
+
+:root {
+  --bg-primary: #253237;
+  --bg-secondary: #5C6B73;
+  --color-highlight: #9DB4C0;
+  --color-accent: #C2DFE3;
+  --color-surface: #E0FBFC;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #253237;
+  color: #E0FBFC;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle medical grid overlay tuned for #253237 background */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(224, 251, 252, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 251, 252, 0.04) 1px, transparent 1px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b2529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5C6B73;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9DB4C0;
+}

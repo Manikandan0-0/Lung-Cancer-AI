@@ -1,0 +1,8 @@
+{
+  "input_size": [224, 224],
+  "input_channels": 3,
+  "preprocessing_function": "tensorflow.keras.applications.resnet50.preprocess_input",
+  "normalization": "resnet50_preprocess_input",
+  "color_mode": "rgb",
+  "note": "Uses ResNet50 channel-wise mean subtraction (BGR mean: [103.939, 116.779, 123.68]) as applied during training via ImageDataGenerator(preprocessing_function=preprocess_input). Do NOT use simple division by 255."
+}

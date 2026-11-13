@@ -1,0 +1,1 @@
+{"name":"PulmoVision AI — Lung CT \u0026 Explainable AI Platform","description":"An explainable AI research platform analyzing lung CT scan images using ResNet50 deep learning and Grad-CAM interpretability visualizations.","requestFramePermissions":[],"majorCapabilities":["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]}

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+build/
+dist/
+*/dist/
+
+# Python cache & artifacts
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*/.pytest_cache/
+.mpl_cache/
+*/.mpl_cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+frontend/.env
+backend/.env
+!.env.example
+!*/.env.example
+
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db
+
+# Large Model files (exclude heavy weights or track via Git LFS if needed)
+*.keras
+*.h5
+*.tflite
+*.pt
+*.pth
