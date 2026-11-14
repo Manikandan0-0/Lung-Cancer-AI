@@ -226,5 +226,30 @@ functional (outer)
 
 The Grad-CAM implementation avoids Keras 3 connectivity errors by splitting the model into two separate `tf.keras.Model` objects (feature extractor + classifier head) and using `tf.GradientTape` to compute gradients between them.
 
+---
+
+## Streamlit Cloud Deployment
+
+A dedicated standalone Streamlit web application is available in `app.py`.
+
+### 1. Run Locally
+```bash
+python -m streamlit run app.py
+```
+Open [http://localhost:8501](http://localhost:8501) in your browser.
+
+### 2. Deploy to Streamlit Community Cloud
+1. Go to [share.streamlit.io](https://share.streamlit.io/) and sign in with GitHub.
+2. Click **Create app**.
+3. Select your repository: `Manikandan0-0/Lung-Cancer-AI`.
+4. Main file path: `app.py`.
+5. *(Optional for weights)*: In **Advanced settings > Secrets**, add:
+   ```toml
+   MODEL_URL = "https://your-public-model-link/lung_cancer_resnet50.keras"
+   ```
+   Or attach `lung_cancer_resnet50.keras` as a [GitHub Release](https://github.com/Manikandan0-0/Lung-Cancer-AI/releases) asset.
+6. Click **Deploy!**
+
+
 
 
